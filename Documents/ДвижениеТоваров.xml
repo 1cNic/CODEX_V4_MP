@@ -186,8 +186,8 @@
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm/>
-			<DefaultListForm/>
+			<DefaultObjectForm>Document.ДвижениеТоваров.Form.ФормаДокумента</DefaultObjectForm>
+			<DefaultListForm>Document.ДвижениеТоваров.Form.ФормаСписка</DefaultListForm>
 			<DefaultChoiceForm/>
 			<AuxiliaryObjectForm/>
 			<AuxiliaryListForm/>
@@ -197,7 +197,9 @@
 			<RegisterRecordsDeletion>AutoDeleteOnUnpost</RegisterRecordsDeletion>
 			<RegisterRecordsWritingOnPost>WriteSelected</RegisterRecordsWritingOnPost>
 			<SequenceFilling>AutoFill</SequenceFilling>
-			<RegisterRecords/>
+			<RegisterRecords>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ОстаткиТоваров</xr:Item>
+			</RegisterRecords>
 			<PostInPrivilegedMode>true</PostInPrivilegedMode>
 			<UnpostInPrivilegedMode>true</UnpostInPrivilegedMode>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
@@ -211,19 +213,58 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
+			<Attribute uuid="a9bf42b3-4d27-4776-80cf-97795d6da070">
+				<Properties>
+					<Name>ВидОперации</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид операции</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВидыОперацийТоваров</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>ShowError</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
 			<TabularSection uuid="ed3937c9-d406-4d0a-b30f-ad7b0537ad4c">
 				<InternalInfo>
-					<xr:GeneratedType name="DocumentTabularSection.&#x0414;&#x0432;&#x0438;&#x0436;&#x0435;&#x043D;&#x0438;&#x0435;&#x0422;&#x043E;&#x0432;&#x0430;&#x0440;&#x043E;&#x0432;.Tovary" category="TabularSection">
+					<xr:GeneratedType name="DocumentTabularSection.&#x0414;&#x0432;&#x0438;&#x0436;&#x0435;&#x043D;&#x0438;&#x0435;&#x0422;&#x043E;&#x0432;&#x0430;&#x0440;&#x043E;&#x0432;.&#x0422;&#x043E;&#x0432;&#x0430;&#x0440;&#x044B;" category="TabularSection">
 						<xr:TypeId>82c645bc-fda4-44eb-9461-b244f28249de</xr:TypeId>
 						<xr:ValueId>848724a1-db3d-4456-8397-a397ec131eae</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DocumentTabularSectionRow.&#x0414;&#x0432;&#x0438;&#x0436;&#x0435;&#x043D;&#x0438;&#x0435;&#x0422;&#x043E;&#x0432;&#x0430;&#x0440;&#x043E;&#x0432;.Tovary" category="TabularSectionRow">
+					<xr:GeneratedType name="DocumentTabularSectionRow.&#x0414;&#x0432;&#x0438;&#x0436;&#x0435;&#x043D;&#x0438;&#x0435;&#x0422;&#x043E;&#x0432;&#x0430;&#x0440;&#x043E;&#x0432;.&#x0422;&#x043E;&#x0432;&#x0430;&#x0440;&#x044B;" category="TabularSectionRow">
 						<xr:TypeId>f1ff73d8-b7af-46ae-a733-8fd1f80ad237</xr:TypeId>
 						<xr:ValueId>ded5c34e-ad0a-4579-a852-af8b55a16097</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
-					<Name>Tovary</Name>
+					<Name>Товары</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -267,7 +308,7 @@
 				<ChildObjects>
 					<Attribute uuid="940dfca9-03c2-49f1-a9a3-99ce3d74db26">
 						<Properties>
-							<Name>Nomenklatura</Name>
+							<Name>Номенклатура</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -304,7 +345,7 @@
 					</Attribute>
 					<Attribute uuid="be93f79d-8e53-4fc0-b9f8-b07d9302f96b">
 						<Properties>
-							<Name>Harakteristika</Name>
+							<Name>Характеристика</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -341,7 +382,7 @@
 					</Attribute>
 					<Attribute uuid="c47b514e-3f7d-42c9-94f2-09f9135954d2">
 						<Properties>
-							<Name>Kolichestvo</Name>
+							<Name>Количество</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -383,6 +424,8 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
+			<Form>ФормаДокумента</Form>
+			<Form>ФормаСписка</Form>
 		</ChildObjects>
 	</Document>
 </MetaDataObject>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Остатки товаров</v8:content>
+		</v8:item>
+	</Title>
+	<Width>160</Width>
+	<Height>35</Height>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаСформировать" id="1">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Сформировать</CommandName>
+				<ExtendedTooltip name="ФормаСформироватьРасширеннаяПодсказка" id="2"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Параметры" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ПараметрыРасширеннаяПодсказка" id="4"/>
+			<ChildItems>
+				<InputField name="ДатаНачала" id="5">
+					<DataPath>ДатаНачала</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="7"/>
+				</InputField>
+				<InputField name="ДатаОкончания" id="8">
+					<DataPath>ДатаОкончания</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаОкончанияКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ДатаОкончанияРасширеннаяПодсказка" id="10"/>
+				</InputField>
+				<Table name="РезультатОтчетаТаблица" id="11">
+					<Representation>List</Representation>
+					<CommandBarLocation>None</CommandBarLocation>
+					<SkipOnInput>false</SkipOnInput>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<DataPath>РезультатОтчета</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результат отчета</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="РезультатОтчетаТаблицаКонтекстноеМеню" id="12"/>
+					<AutoCommandBar name="РезультатОтчетаТаблицаКоманднаяПанель" id="13">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="РезультатОтчетаТаблицаРасширеннаяПодсказка" id="14"/>
+					<ChildItems>
+						<LabelField name="Номенклатура" id="15">
+							<DataPath>РезультатОтчета.Номенклатура</DataPath>
+							<ContextMenu name="НоменклатураКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="17"/>
+						</LabelField>
+						<LabelField name="Характеристика" id="18">
+							<DataPath>РезультатОтчета.Характеристика</DataPath>
+							<ContextMenu name="ХарактеристикаКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="ХарактеристикаРасширеннаяПодсказка" id="20"/>
+						</LabelField>
+						<LabelField name="НачальныйОстаток" id="21">
+							<DataPath>РезультатОтчета.НачальныйОстаток</DataPath>
+							<ContextMenu name="НачальныйОстатокКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="НачальныйОстатокРасширеннаяПодсказка" id="23"/>
+						</LabelField>
+						<LabelField name="Приход" id="24">
+							<DataPath>РезультатОтчета.Приход</DataPath>
+							<ContextMenu name="ПриходКонтекстноеМеню" id="25"/>
+							<ExtendedTooltip name="ПриходРасширеннаяПодсказка" id="26"/>
+						</LabelField>
+						<LabelField name="Расход" id="27">
+							<DataPath>РезультатОтчета.Расход</DataPath>
+							<ContextMenu name="РасходКонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="РасходРасширеннаяПодсказка" id="29"/>
+						</LabelField>
+						<LabelField name="КонечныйОстаток" id="30">
+							<DataPath>РезультатОтчета.КонечныйОстаток</DataPath>
+							<ContextMenu name="КонечныйОстатокКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="КонечныйОстатокРасширеннаяПодсказка" id="32"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ReportObject.ОстаткиТоваровОтчет</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ДатаНачала" id="2">
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаОкончания" id="3">
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РезультатОтчета" id="4">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Номенклатура" id="1">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Характеристика" id="2">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НачальныйОстаток" id="3">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Приход" id="4">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Расход" id="5">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КонечныйОстаток" id="6">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Сформировать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать отчет по остаткам товаров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Выгрузка товаров фруктов</v8:content>
+		</v8:item>
+	</Title>
+	<Width>120</Width>
+	<Height>35</Height>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаВыгрузитьТовары" id="1">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ВыгрузитьТовары</CommandName>
+				<ExtendedTooltip name="ФормаВыгрузитьТоварыРасширеннаяПодсказка" id="2"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ОсновнаяГруппа" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная группа</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОсновнаяГруппаРасширеннаяПодсказка" id="4"/>
+			<ChildItems>
+				<Table name="РезультатВыгрузкиТаблица" id="5">
+					<Representation>List</Representation>
+					<CommandBarLocation>None</CommandBarLocation>
+					<SkipOnInput>false</SkipOnInput>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<DataPath>РезультатВыгрузки</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результат выгрузки</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="РезультатВыгрузкиТаблицаКонтекстноеМеню" id="6"/>
+					<AutoCommandBar name="РезультатВыгрузкиТаблицаКоманднаяПанель" id="7">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="РезультатВыгрузкиТаблицаРасширеннаяПодсказка" id="8"/>
+					<ChildItems>
+						<LabelField name="Номенклатура" id="9">
+							<DataPath>РезультатВыгрузки.Номенклатура</DataPath>
+							<ContextMenu name="НоменклатураКонтекстноеМеню" id="10"/>
+							<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="11"/>
+						</LabelField>
+						<LabelField name="Артикул" id="12">
+							<DataPath>РезультатВыгрузки.Артикул</DataPath>
+							<ContextMenu name="АртикулКонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="АртикулРасширеннаяПодсказка" id="14"/>
+						</LabelField>
+						<LabelField name="Характеристика" id="15">
+							<DataPath>РезультатВыгрузки.Характеристика</DataPath>
+							<ContextMenu name="ХарактеристикаКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="ХарактеристикаРасширеннаяПодсказка" id="17"/>
+						</LabelField>
+						<LabelField name="Цвет" id="18">
+							<DataPath>РезультатВыгрузки.Цвет</DataPath>
+							<ContextMenu name="ЦветКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="ЦветРасширеннаяПодсказка" id="20"/>
+						</LabelField>
+						<LabelField name="Размер" id="21">
+							<DataPath>РезультатВыгрузки.Размер</DataPath>
+							<ContextMenu name="РазмерКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="РазмерРасширеннаяПодсказка" id="23"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ВыгрузкаТоваровФруктов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="РезультатВыгрузки" id="2">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Номенклатура" id="1">
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Артикул" id="2">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>30</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Характеристика" id="3">
+					<Type>
+						<v8:Type>cfg:CatalogRef.Характеристики</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Цвет" id="4">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Размер" id="5">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыгрузитьТовары" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ВыгрузитьТовары</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать фрукты и характеристики</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузитьТовары</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

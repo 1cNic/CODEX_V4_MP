@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="5c3f09d0-2d5d-4d45-9639-f271f0df2234">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.&#x0412;&#x0438;&#x0434;&#x044B;&#x041E;&#x043F;&#x0435;&#x0440;&#x0430;&#x0446;&#x0438;&#x0439;&#x0422;&#x043E;&#x0432;&#x0430;&#x0440;&#x043E;&#x0432;" category="Ref">
+				<xr:TypeId>e1a54e96-2e0f-45fd-a2fd-a97ccecf7021</xr:TypeId>
+				<xr:ValueId>f58d09a6-c907-4f3f-bf38-219c2f4780d3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.&#x0412;&#x0438;&#x0434;&#x044B;&#x041E;&#x043F;&#x0435;&#x0440;&#x0430;&#x0446;&#x0438;&#x0439;&#x0422;&#x043E;&#x0432;&#x0430;&#x0440;&#x043E;&#x0432;" category="Manager">
+				<xr:TypeId>6853bb60-6e9f-4161-a364-b1a1519ac509</xr:TypeId>
+				<xr:ValueId>248917f5-84b1-496d-bff2-b1f248bbd898</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.&#x0412;&#x0438;&#x0434;&#x044B;&#x041E;&#x043F;&#x0435;&#x0440;&#x0430;&#x0446;&#x0438;&#x0439;&#x0422;&#x043E;&#x0432;&#x0430;&#x0440;&#x043E;&#x0432;" category="List">
+				<xr:TypeId>768d56af-c306-43df-8b19-5568c1b96d05</xr:TypeId>
+				<xr:ValueId>8e7dd40b-df78-4d43-ba2c-5ae5b6d16285</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>&#x0412;&#x0438;&#x0434;&#x044B;&#x041E;&#x043F;&#x0435;&#x0440;&#x0430;&#x0446;&#x0438;&#x0439;&#x0422;&#x043E;&#x0432;&#x0430;&#x0440;&#x043E;&#x0432;</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&#x0412;&#x0438;&#x0434;&#x044B; &#x043E;&#x043F;&#x0435;&#x0440;&#x0430;&#x0446;&#x0438;&#x0439; &#x0442;&#x043E;&#x0432;&#x0430;&#x0440;&#x043E;&#x0432;</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>false</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="61091780-2cdf-4529-b86c-f92c8303ee27">
+				<Properties>
+					<Name>&#x041F;&#x0440;&#x0438;&#x0445;&#x043E;&#x0434;</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&#x041F;&#x0440;&#x0438;&#x0445;&#x043E;&#x0434;</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4ee08997-acf7-40c0-b728-58be3536954b">
+				<Properties>
+					<Name>&#x0420;&#x0430;&#x0441;&#x0445;&#x043E;&#x0434;</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&#x0420;&#x0430;&#x0441;&#x0445;&#x043E;&#x0434;</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

@@ -247,7 +247,11 @@
 			<Language>Русский</Language>
 			<Catalog>Номенклатура</Catalog>
 			<Catalog>Характеристики</Catalog>
+			<Enum>ВидыОперацийТоваров</Enum>
 			<Document>ДвижениеТоваров</Document>
+			<AccumulationRegister>ОстаткиТоваров</AccumulationRegister>
+			<Report>ОстаткиТоваровОтчет</Report>
+			<DataProcessor>ВыгрузкаТоваровФруктов</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
